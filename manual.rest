@@ -1,0 +1,37 @@
+GET http://localhost:3000/
+###
+
+GET http://localhost:3000/users
+###
+
+GET http://localhost:3000/pokemons
+###
+
+GET http://localhost:3000/users/1
+###
+
+GET http://localhost:3000/pokemons/1
+###
+
+POST http://localhost:3000/pokemons
+Content-Type: application/json
+
+{
+    "name": "Pikachu",
+    "type": "Electric",
+    "weight": 60
+}
+###
+
+PUT http://localhost:3000/pokemons/1
+Content-Type: application/json
+
+{
+    "name": "Charmander",
+    "type": "Fire",
+    "weight": 65
+}
+###
+
+DELETE http://localhost:3000/pokemons/4
+###

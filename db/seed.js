@@ -1,4 +1,4 @@
-const {sequelize} = require('./db');
+const {db, DataTypes} = require('./index');
 const seed = require('./seedFn');
 
 seed()
@@ -9,6 +9,6 @@ seed()
     console.error(err);
   })
   .finally(() => {
-    sequelize.close();
+    db.close();
   });
   

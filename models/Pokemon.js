@@ -3,13 +3,13 @@ const {db, DataTypes} = require('../db');
 
 // TODO - define the Movie model
 let Pokemon = db.define('Pokemon', {
-    Name: {
+    name: {
         type: DataTypes.STRING
     },
-    Type: {
+    type: {
         type: DataTypes.STRING
     },
-    Weight: {
+    weight: {
         type: DataTypes.INTEGER
     }
 })

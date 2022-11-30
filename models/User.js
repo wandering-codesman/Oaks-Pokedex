@@ -3,16 +3,16 @@ const {db, DataTypes} = require('../db');
 
 // TODO - define the Movie model
 let User = db.define('User', {
-    FirstName: {
+    firstName: {
         type: DataTypes.STRING
     },
-    LastName: {
+    lastName: {
         type: DataTypes.STRING
     },
-    Email: {
+    email: {
         type: DataTypes.STRING
     },
-    Password: {
+    password: {
         type: DataTypes.STRING
     },
 })
